@@ -1,0 +1,16 @@
+# The card generation for the individual domains is done by calling generate_cards_custom.sh in the respective domainname/template subfolders.
+# To generate a new domain, simply copy the example_custom_domain folder and modify in example_custom_domain/templates the card_data_example_domain.csv and domain_metadata.txt.
+The csv contains the text to be pasted onto the cards, and the links to the pngs to be included on the card (backgrounds and card art). For this to work, please dont change folder names and paths and stay within the given folderstructure.
+
+# Open Terminal in the respective subfolder (e.g. example_custom_domain/templates)
+# Make generate_cards executable
+chmod +x generate_cards_example_domain.sh
+
+
+# Run it
+bash generate_cards_example_domain.sh
+
+# Result pdfs are in /custom_domains/example_custom_domain/output
+
+
+In this folder you will find an aggregated executable, that does these substeps for you, i.e. shelling into the respective folders and executing the generation scripts there
